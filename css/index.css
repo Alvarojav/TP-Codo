@@ -1,0 +1,518 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@500&family=Sansita:ital,wght@0,400;1,400;1,700;1,800&display=swap");
+
+/* font-family: 'Architects Daughter', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Sansita', sans-serif;
+*/
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  /* tex decoration: para quitar la linea de abajo de los enlaces */
+  text-decoration: none;
+  /* list-style para quitar las viñetas de las listas*/
+}
+
+body {
+  font-family: "Sansita", sans-serif;
+  background-image: url(../img/fondo-presentacion-abstracto-blanco-negro-rojo-azul-moderno-concepto-corporativo_181182-17144.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.header {
+  /* align-items alinea los elementos hijos de una misma fila entre sí */
+  align-items: center;
+  min-height: 70vh;
+}
+
+.menu {
+  background-color: #0e3746;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  display: flex;
+  align-items: center;
+  /* justify-content es una propiedad del contenedor flex y controla el alineamiento de los elementos de una caja flexible */
+  justify-content: space-between;
+}
+
+.menu .navmenu a {
+  position: relative;
+  cursor: pointer;
+  float: left;
+  font-size: 18px;
+  padding: 20px;
+  display: block;
+  color: #be2623;
+  font-weight: 600;
+}
+#menu {
+  display: none;
+}
+.menu-icono {
+  width: 25px;
+  display: none;
+}
+.manu label {
+  cursor: pointer;
+  display: none;
+}
+
+.header-txt h1 {
+  font-family: "Sansita", sans-serif;
+  padding: 100px;
+  color: #f03d33;
+  font-size: 110px;
+  line-height: 100px;
+  margin-bottom: 15px;
+  margin-left: -50px;
+}
+.header-txt h1 b {
+  color: #0e3746;
+}
+
+.header-txt h2 {
+  font-family: "Sansita", sans-serif;
+  padding: 40px;
+  color: #f03d33;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 30px;
+  margin-left: -20px;
+}
+.header-txt h2 i {
+  color: #0e3746;
+}
+
+/* falta colocar header-txt p para definir color tamaño de letra */
+
+.btn-1 {
+  /* display inline-block para ocupar bien el padding */
+  display: inline-block;
+  padding: 13px 25px;
+  background-color: #0e3746;
+  color: #f03d33;
+  font-size: 16px;
+  /* para que cada palabra inicie con mayuscula */
+  text-transform: capitalize;
+}
+.btn-1:hover {
+  background-color: #d2b0a0;
+}
+.header-content {
+  /* display flex, con esto las img principales se van para encima del titulo  */
+  display: flex;
+}
+
+.header-txt {
+  text-align: left;
+  width: 32.85%;
+}
+.header-img {
+  padding: 65px;
+  width: 60%;
+  /* text-align right, por que quiero la imagen a la derecha */
+  text-align: right;
+  position: relative;
+}
+.header-img img {
+  width: 1010px;
+}
+.ofert {
+  /* agregar una imagen en formato SVG en el parectesis */
+  background-image: url();
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.ofert h2 {
+  font-size: 50px;
+  color: #2c150b;
+  font-family: "Sansita", sans-serif;
+  margin: 60px 0 40px 0;
+}
+
+.ofert-countent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.ofert-1 img {
+  width: 280px;
+}
+.ofert-1 h3 {
+  font-family: "Sansita", sans-serif;
+  color: #800834;
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.ofert-1 p {
+  font-size: 16px;
+  color: #2e122d;
+}
+
+.producto {
+  margin-top: -5px;
+  padding: 25px 0;
+  background: #666564;
+  opacity: 50%;
+  text-align: center;
+}
+
+.producto h2 {
+  font-size: 50px;
+  color: #800834;
+}
+
+.producto-1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.producto-info {
+  align-items: center;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+.producto-txt {
+  width: 50%;
+}
+.producto-in {
+  margin-left: 20px;
+}
+
+.producto-in h3 {
+  font-family: "Sansita", sans-serif;
+  color: #0e3746;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.producto-in p {
+  color: #666564;
+  font-size: 16px;
+}
+
+.producto-img {
+  width: 50%;
+}
+
+.producto-img img {
+  width: 500px;
+}
+
+.bg-producto {
+  /* colocar link de imagen SVG */
+  background-image: url();
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+}
+.menubg {
+  padding: 50px 0;
+  text-align: left;
+}
+.menubg h2 {
+  font-family: "Sansita", sans-serif;
+  color: #0e3746;
+  font-size: 50px;
+  margin-bottom: 50px;
+  text-transform: capitalize;
+}
+.boxprodutos {
+  width: 240px;
+}
+.bgproducto-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 35px;
+}
+.bgproducto-content h3 {
+  font-family: "Sansita", sans-serif;
+  color: #a0522d;
+  font-size: 30px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  text-align: left;
+}
+.bgproducto-1 img {
+  width: 240px;
+}
+
+.bgproducto-1 p {
+  color: #2e122d;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.mapa-ubicacion {
+  padding: 100px;
+  display: flex;
+}
+
+.mapa-1 {
+  width: 50%;
+}
+.mapa-1 h2 {
+  font-size: 50px;
+  color: #eae8dc;
+  font-family: "Sansita", sans-serif;
+  margin-bottom: 35%;
+}
+
+.mapa-1 p {
+  font-size: 16px;
+  color: #e3e3e3;
+  margin-bottom: 15px;
+}
+/* para cuando se agregue la ubicaciona utilizar la class> map */
+.map {
+  width: 600px;
+  height: 400px;
+}
+.footer {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: #fbfbfb;
+  opacity: 40%;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+.link h3 {
+  color: #343239;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.link a {
+  color: #666564;
+  font-size: 19px;
+  display: block;
+  margin-bottom: 10px;
+}
+@media (max-width: 991px) {
+  .menu {
+    padding: 30px;
+  }
+  .menu label {
+    display: initial;
+  }
+
+  .menu .navmenu {
+    position: absolute;
+    top: 100%;
+    background-color: #666564;
+    display: none;
+  }
+
+  .menu .navmenu a {
+    color: #c72b41;
+  }
+  #menu:checked ~ .navmenu {
+    display: initial;
+  }
+
+  .header {
+    min-height: 0vh;
+  }
+  .header-content {
+    flex-direction: column;
+    padding: 100px 30px 30px 30px;
+    text-align: center;
+  }
+  .header-txt {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  .header-txt h1 {
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 25px;
+  }
+  .header-img {
+    width: 100%;
+  }
+  .header-img img {
+    width: 100%;
+  }
+  .ofert {
+    padding: 30px;
+  }
+  .ofert h2 {
+    margin: 0;
+  }
+  .ofert-countent {
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  .ofert-1 {
+    padding: 0 25px;
+    margin-bottom: 25px;
+  }
+  .producto {
+    padding: 30px;
+  }
+  .producto-1 {
+    flex-direction: column;
+  }
+  .producto-txt {
+    width: 100%;
+  }
+  .producto-in {
+    margin-left: 40px;
+  }
+  .producto-img {
+    width: 100%;
+    order: 2;
+  }
+  .producto-img img {
+    width: 100%;
+  }
+  .bgproducto {
+    padding: 30px;
+  }
+  .bgproducto h1 h3 p {
+    padding: 30px;
+    margin-bottom: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .mapa-ubicacion {
+    padding: 0 30px 30px 30px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .mapa-1 {
+    width: 100%;
+  }
+  .map {
+    width: 300px;
+    height: 350px;
+  }
+  .footer {
+    padding: 30px;
+  }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.talles-content h1 {
+  font-family: "Sansita", sans-serif;
+  display: flex;
+  width: 50%;
+  padding: 70px;
+  color: #b58863;
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 15px;
+  text-align: right;
+}
+.tabla-content p {
+  color: #2e122d;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.tabla-hm {
+  left: 1000px;
+  position: relative;
+  top: -50px;
+  width: 350px;
+}
+.tabla-hm :is(.bodyt td, .headt th) {
+  padding: 25px 15px;
+}
+.tabla-hm thead th {
+  font-size: 30px;
+  background: lightgrey;
+  color: #0e3746;
+}
+.tabla-hm tbody td {
+  font-size: 20px;
+  background: #d3d3d373;
+  color: #800834;
+}
+.tabla-content .navTabla {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .talles-content h1 {
+    font-size: 20px;
+    line-height: 70px;
+    margin-bottom: 25px;
+  }
+  .tabla-content .botUp,
+  .tabla-content .botDn {
+    display: block;
+    height: 0;
+    width: 0;
+    margin: 0 auto;
+    border: 20px solid transparent;
+    border-top: 0;
+    border-bottom: 0;
+    pointer-events: all;
+  }
+  .tabla-content .botUp {
+    border-bottom: 20px solid black;
+  }
+  .tabla-content .botDn {
+    border-top: 20px solid black;
+  }
+  .tabla-content .tabla-hm {
+    display: flex;
+    gap: 2px;
+    justify-content: space-between;
+    overflow: hidden;
+    background: #f9f2fc;
+  }
+  .tabla-content .tabla-hm .headt {
+    display: block;
+    flex: 1 0;
+    height: fit-content;
+  }
+  .tabla-content .tabla-hm .bodyt {
+    flex: 2 0 auto;
+    overflow-y: hidden;
+    scroll-snap-type: y mandatory;
+  }
+  .tabla-content .tabla-hm .headt tr {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    flex: 1 0 100%;
+  }
+  .tabla-content .tabla-hm .bodyt tr {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+  }
+  .tabla-content .tabla-hm .bodyt tr:nth-child(odd) {
+    background: #f4fff5;
+  }
+  .tabla-content .tabla-hm :is(th, td) {
+    display: block;
+  }
+}
